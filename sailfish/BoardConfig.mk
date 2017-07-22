@@ -103,9 +103,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := /vendor/lib/dsp:/dsp
 
 TARGET_EXCLUDE_QCOM_SEPOLICY := true
 BOARD_SEPOLICY_DIRS += device/google/marlin/sepolicy
-ifneq ($(filter sailfish sailfishf, $(TARGET_DEVICE)),)
 BOARD_SEPOLICY_DIRS += device/google/marlin/sepolicy/verizon
-endif
 BOARD_SECCOMP_POLICY += device/google/marlin/seccomp
 
 BOARD_EGL_CFG := device/google/marlin/egl.cfg
